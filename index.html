@@ -2,59 +2,152 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sai Teja | Full Stack Developer Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Sai Teja | Full Stack Developer</title>
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Sai Teja</h1>
-    <p>Full Stack Developer | Java Spring Boot & React</p>
+  <!-- Header -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="#">Sai Teja</a>
+    </div>
+  </nav>
+
+  <header class="bg-primary text-white text-center py-5">
+    <div class="container">
+      <h1 class="display-4">Full Stack Developer</h1>
+      <p class="lead">Java | Spring Boot | React | AWS</p>
+    </div>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I’m a Full Stack Developer with 4+ years of experience delivering secure, responsive, and scalable web apps.
-      I specialize in Java Spring Boot, React, REST APIs, and AWS solutions.
-    </p>
-  </section>
+  <main class="container my-5">
+    <!-- About -->
+    <section class="mb-5">
+      <h2>About Me</h2>
+      <p>Enterprise Software Engineer with 4+ years designing and implementing secure, scalable enterprise solutions. Proficient in Java, Spring Boot, React, AWS, and data migration. Strong in translating requirements into detailed designs within scope and budget.</p>
+    </section>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Java, JavaScript, Python</li>
-      <li>Spring Boot, React, Angular</li>
-      <li>AWS, Jenkins, Git, CI/CD</li>
-      <li>Oracle SQL, PostgreSQL, MongoDB</li>
-    </ul>
-  </section>
+    <!-- Skills -->
+    <section class="mb-5">
+      <h2>Technical Skills</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <ul>
+            <li>Java, JavaScript, Python</li>
+            <li>Spring Boot, React, Angular, Hibernate</li>
+            <li>AWS, Jenkins, Git, CI/CD</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <ul>
+            <li>Oracle SQL, PostgreSQL, MongoDB</li>
+            <li>Power BI, Tableau, Splunk, Qlik Sense</li>
+            <li>SDLC, Agile/Scrum, Secure Coding</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-  <section id="projects">
-    <h2>Featured Projects</h2>
-    <div class="project">
-      <h3>Django Traders – Full Stack App</h3>
-      <p>Built a trading app with Django, Python & PostgreSQL. Includes secure user auth & dashboards.</p>
-    </div>
-    <div class="project">
-      <h3>NC Pandemic Recovery Dashboard</h3>
-      <p>Designed PL/SQL procedures & Power BI dashboards for real-time data reporting. Improved performance by 30%.</p>
-    </div>
-    <div class="project">
-      <h3>Enterprise Web App</h3>
-      <p>Developed a scalable app with Spring Boot, Angular & AWS. Integrated REST APIs & microservices.</p>
-    </div>
-  </section>
+    <!-- Experience -->
+    <section class="mb-5">
+      <h2>Professional Experience</h2>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: saitejam97@gmail.com</p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/saiteja1217" target="_blank">View Profile</a></p>
-    <p>GitHub: <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank">View Projects</a></p>
-  </section>
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5 class="card-title">North Carolina Pandemic Recovery Office</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Database Analyst Intern | June 2024 – Sept 2024</h6>
+          <ul>
+            <li>Designed & optimized PL/SQL procedures for data transformation.</li>
+            <li>Automated reporting & built Power BI dashboards for agencies.</li>
+            <li>Improved query response times by 30%.</li>
+          </ul>
+        </div>
+      </div>
 
-  <footer>
-    <p>© 2025 Sai Teja. All rights reserved.</p>
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5 class="card-title">Ivy Mobitech Services Pvt Ltd.</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Software Engineer / Full Stack Developer | June 2022 – July 2023</h6>
+          <ul>
+            <li>Built responsive UI with Angular; integrated backend RESTful APIs.</li>
+            <li>Managed deployments, production support, and troubleshooting.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5 class="card-title">Tata Consultancy Services Ltd.</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Systems Engineer / Full Stack Developer | July 2019 – May 2022</h6>
+          <ul>
+            <li>Developed scalable web apps using Spring Boot, Angular, AWS.</li>
+            <li>Designed RESTful APIs & microservices.</li>
+            <li>Mentored juniors & managed production deployments.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="mb-5">
+      <h2>Featured Projects</h2>
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Django Traders</h5>
+              <p class="card-text">Built a trading app with Django, Python, and PostgreSQL with secure authentication and dashboards.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">NC Pandemic Recovery Dashboard</h5>
+              <p class="card-text">Designed PL/SQL ETL pipelines and Power BI dashboards for real-time reporting.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Enterprise Web App</h5>
+              <p class="card-text">Built scalable app with Spring Boot, Angular, AWS, with REST APIs & microservices.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="mb-5">
+      <h2>Certifications & Achievements</h2>
+      <ul>
+        <li>Software Engineering Virtual Program – Wells Fargo & HPE</li>
+        <li>AWS Developer Associate (In Progress)</li>
+        <li>Best Team Award – Web Development</li>
+        <li>Technical Excellence Award – Backend Dev</li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section class="mb-5">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:saitejam97@gmail.com">saitejam97@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/saiteja1217" target="_blank">linkedin.com/in/saiteja1217</a></p>
+      <p>GitHub: <a href="https://github.com/malyalasaiteja" target="_blank">github.com/malyalasaiteja</a></p>
+    </section>
+  </main>
+
+  <footer class="bg-primary text-white text-center py-3">
+    <p class="mb-0">© 2025 Sai Teja. All rights reserved.</p>
   </footer>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
